@@ -1,0 +1,118 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    display: flex;
+    background-color:  hsl(0, 0%, 100%);;
+    margin: 50% auto;
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+@media (max-width: 992px) {
+    .box {
+        flex-direction: column;
+        width: 300px;
+        height: 600px;
+    }
+}
+.card-image-desktop {
+    max-height: 100%;
+
+}
+.card-image-mobile {
+    display: none;
+
+}
+@media (max-width: 992px) {
+   .card-image-desktop {
+    display: none;
+   }
+   .card-image-mobile {
+    width: 100%;
+    display: block;
+    }
+}
+.content {
+    flex: 1;
+    margin-top:30px;
+    text-align: start;
+}
+.content .title {
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.8rem;
+    color: hsl(228, 12%, 48%);
+}
+.content h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    max-width: 300px;
+}
+.content p {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    color: hsl(228, 12%, 48%);
+    max-width: 300px;
+    font-size: 0.85rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+.content span:nth-of-type(2) {
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 20px;
+
+}
+.content span:nth-of-type(3) {
+    text-decoration: line-through;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    margin-left: 10px;
+}
+.content button {
+    display: block;
+    margin: 30px auto ;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 100px;
+    border-style: none;
+    border-radius: 5px;
+}
+.content .cart-icon {
+    margin-right:  10px;
+}
+@media (max-width: 992px) {
+    .content button  {
+        padding: 15px 85px;
+        margin: 20px auto ;
+    }
+ }
+
+
