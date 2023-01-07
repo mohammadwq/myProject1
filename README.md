@@ -1,2 +1,2 @@
 # myProject1
-this is my first project
+Frontend Mentor - Product preview card component
